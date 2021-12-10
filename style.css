@@ -1,0 +1,35 @@
+/* Conifiguração do Body*/
+body {
+    background-color: rgba(7, 135, 7, 0.884);
+}
+
+/* Area dos container*/
+.container {
+    background-color: rgba(255, 255, 255, 0.644);
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.2px;
+}
+.title-container {
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+.title-container p {
+    margin-top: -10px;
+}
+.addTarefas {
+    margin-left: 25px;
+}
+/*Footer*/
+.rodape a {
+    text-decoration: none;
+    color: black;
+}
+.rodape {
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.644);
+   margin-left: 5%;
+   margin-right: 5%;
+   padding: 2px;
+}
