@@ -9,4 +9,7 @@ buttonTask.addEventListener('click', function(){
     itemList.innerText = inputFiled.value;
     lisTask.appendChild(itemList)
     inputFiled.value = "";
+    itemList.addEventListener('click', function(){
+        itemList.style.backgroundColor = `rgb(128, 128, 128)`
+    })
 })
