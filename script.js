@@ -1,11 +1,12 @@
-// Area das variaveis globais
-let olCount = document.querySelector('lista-container');
-const buttomCont = document.querySelector('add-tarefa');
-// Funções
-function createLi (){
-    var addLi = document.createElement('li');
-    addLi.innerHTML = 'oi';
-    olCount.appendChild(addLi);
-    console.log('oi')
-}
-createLi()
+// Declaração de variaveis
+let inputFiled = document.getElementById('texto-tarefa');
+let buttonTask = document.getElementById('criar-tarefa');
+let lisTask = document.getElementById('lista-tarefas');
+
+// Chamada de funções
+buttonTask.addEventListener('click', function(){
+    let itemList = document.createElement('li');
+    itemList.innerText = inputFiled.value;
+    lisTask.appendChild(itemList)
+    inputFiled.value = "";
+})
