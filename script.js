@@ -1,11 +1,11 @@
 // Declaração de variaveis
-let inputFiled = document.getElementById('texto-tarefa');
-let buttonTask = document.getElementById('criar-tarefa');
-let lisTask = document.getElementById('lista-tarefas');
+const inputFiled = document.getElementById('texto-tarefa');
+const buttonTask = document.getElementById('criar-tarefa');
+const lisTask = document.getElementById('lista-tarefas');
 
 // Chamada de funções
 buttonTask.addEventListener('click', function(){
-    let itemList = document.createElement('li');
+    const itemList = document.createElement('li');
     itemList.innerText = inputFiled.value;
     lisTask.appendChild(itemList)
     inputFiled.value = "";
