@@ -21,6 +21,9 @@ body {
 .addTarefas {
     margin-left: 25px;
 }
+.selected-item {
+    background-color: rgb(128, 128, 128);
+}
 /*Footer*/
 .rodape a {
     text-decoration: none;
