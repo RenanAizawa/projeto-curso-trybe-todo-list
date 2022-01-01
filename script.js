@@ -16,7 +16,14 @@ buttonTask.addEventListener('click', function(){
             selectLi.classList.remove('selected-item')
         }
         var alvo = event.target;
-        alvo.classList.add('selected-item') 
-        // itemList.style.backgroundColor = `rgb(128, 128, 128)`
+        alvo.classList.add('selected-item')
+    })
+    itemList.addEventListener('dblclick', function (event) {
+        var alvo = event.target;
+        if (alvo.classList.contains('completed')) {
+            alvo.classList.remove('completed')
+        } else {
+            alvo.classList.add('completed')
+        } // Agracedimento à : https://github.com/lalanametala pela dica do contains
     })
 })
