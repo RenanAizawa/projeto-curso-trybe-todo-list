@@ -27,6 +27,13 @@ body {
 .completed {
     text-decoration: line-through solid rgb(0, 0, 0);
 }
+#others-buttons {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    padding: 0.2px;
+}
 /*Footer*/
 .rodape a {
     text-decoration: none;
