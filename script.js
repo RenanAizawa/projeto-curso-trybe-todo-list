@@ -29,11 +29,11 @@ buttonTask.addEventListener('click', function(){
     })
 })
 apagarTudoButton.addEventListener('click', function () {
-    var liElements = document.querySelectorAll('li');
-    for (var i = 0; i < liElements.length; i++) {
-        var liDaVez = document.querySelectorAll('li')[i];
-        liDaVez.removeChild(liDaVez.childNodes[0])
-    }
+    // var liElements = document.querySelectorAll('li');
+    // for (var i = 0; i < liElements.length; i++) {
+    //     var liDaVez = document.querySelectorAll('li')[i];
+    //     liDaVez.removeChild(liDaVez.childNodes[0])
+    // }
     var textLo = document.getElementById('lista-tarefas');
     textLo.innerText = "";
 })
