@@ -40,7 +40,8 @@ apagarTudoButton.addEventListener('click', function () {
 ApagarFinalizadosButton.addEventListener('click', function () {
     var completados = document.querySelectorAll('.completed')
     for (var i = 0; i < completados.length; i++) {
-        var deleteCompletados = document.querySelectorAll('.completed')[i];
-        deleteCompletados.removeChild(deleteCompletados)
+        var deleteCompletados = document.querySelectorAll('.completed')[0];
+        console.log(deleteCompletados)
+        document.getElementById('lista-tarefas').removeChild(deleteCompletados)
     }
 })
