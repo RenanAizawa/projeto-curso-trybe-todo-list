@@ -3,6 +3,7 @@ const inputFiled = document.getElementById('texto-tarefa');
 const buttonTask = document.getElementById('criar-tarefa');
 const lisTask = document.getElementById('lista-tarefas');
 const apagarTudoButton = document.getElementById('apaga-tudo');
+const ApagarFinalizadosButton = document.getElementById('remover-finalizados');
 // Chamada de funções
 buttonTask.addEventListener('click', function(){
     const itemList = document.createElement('li');
@@ -34,5 +35,12 @@ apagarTudoButton.addEventListener('click', function () {
         liDaVez.removeChild(liDaVez.childNodes[0])
     }
     var textLo = document.getElementById('lista-tarefas');
-    textLo.innerText = "";
+    // textLo.innerText = "";
+})
+ApagarFinalizadosButton.addEventListener('click', function () {
+    var completados = document.querySelectorAll('.completed')
+    for (var i = 0; i < completados.length; i++) {
+        var deleteCompletados = document.querySelectorAll('.completed')[i];
+        deleteCompletados.removeChild(deleteCompletados)
+    }
 })
