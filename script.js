@@ -35,7 +35,7 @@ apagarTudoButton.addEventListener('click', function () {
         liDaVez.removeChild(liDaVez.childNodes[0])
     }
     var textLo = document.getElementById('lista-tarefas');
-    // textLo.innerText = "";
+    textLo.innerText = "";
 })
 ApagarFinalizadosButton.addEventListener('click', function () {
     var completados = document.querySelectorAll('.completed')
